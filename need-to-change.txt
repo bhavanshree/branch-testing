@@ -1,0 +1,50 @@
+Please remove MFA for all the JMAN Employees
+Please remove JMAN IP and JMAN Employee IP address from UAT security groups
+Please remove the emails from the SNS service
+Please ask Tom to revoke Cloudflare access for Babu and Sachin
+AWS workspace
+AWS application credentials like username and password
+
+Alarms
+
+
+security group
+
+sg-022535aecad526a53 - launch-wizard-2
+
+
+
+there is no change for the PROD security group
+
+For UAT there is few IP would be removed in this security group launch-wizard-2
+
+launch-wizard-3 is pending
+
+users 
+
+they have 
+dwh-s3
+jamn-dwh
+jamandev
+
+
+arn:aws:sns:us-east-1:179624405885:EM-Prod-High-Utilization:4d5014e8-16bf-4bdf-b902-07dffd87ad36
+
+Subscription Principal
+arn:aws:iam::179624405885:root
+
+Endpoint
+babugovindaswamy@jmangroup.com
+
+ARN
+arn:aws:sns:us-east-1:179624405885:EM-Prod-High-Utilization:4d5014e8-16bf-4bdf-b902-07dffd87ad36
+
+---------------
+ARN
+arn:aws:sns:us-east-1:179624405885:EM-Prod-High-Utilization:a37dd1fc-992f-4134-80b9-8ef44dd0d03f
+
+Subscription Principal
+arn:aws:iam::179624405885:root
+
+EM-Prod-High-Utilization
+bhavanshree.k@10decoders.in

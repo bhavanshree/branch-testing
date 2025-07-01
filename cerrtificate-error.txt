@@ -1,0 +1,51 @@
+2025-06-02 02:45:50.648 -04:00 [INF] Checking URL is accessible: http://uat.tree.com/.well-known/acme-challenge/q_UxUHMRAc5XhHlwQjIWdTRXCKhyPl50NJJr-ENQ6U4 [proxyAPI: True, timeout: 5000ms]
+2025-06-02 02:45:50.662 -04:00 [INF] Checking URL is accessible: http://uat.tree.com/.well-known/acme-challenge/q_UxUHMRAc5XhHlwQjIWdTRXCKhyPl50NJJr-ENQ6U4 [proxyAPI: False, timeout: 5000ms]
+2025-06-02 02:45:50.663 -04:00 [ERR] Failed to confirm URL is accessible : http://uat.tree.com/.well-known/acme-challenge/q_UxUHMRAc5XhHlwQjIWdTRXCKhyPl50NJJr-ENQ6U4 
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'uat.tree.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Certify.Shared.Core.Utils.NetworkUtils.<CheckURL>d__6.MoveNext() in D:\a\certify-internal\certify-internal\src\certify-build\certify\src\Certify.Shared\Utils\NetworkUtils.cs:line 151
+2025-06-02 02:45:50.664 -04:00 [INF] Checking URL is accessible: http://uat.tree.com/.well-known/acme-challenge/q_UxUHMRAc5XhHlwQjIWdTRXCKhyPl50NJJr-ENQ6U4 [proxyAPI: True, timeout: 5000ms]
+2025-06-02 02:45:50.676 -04:00 [INF] Checking URL is accessible: http://uat.tree.com/.well-known/acme-challenge/q_UxUHMRAc5XhHlwQjIWdTRXCKhyPl50NJJr-ENQ6U4 [proxyAPI: False, timeout: 5000ms]
+2025-06-02 02:45:50.676 -04:00 [ERR] Failed to confirm URL is accessible : http://uat.tree.com/.well-known/acme-challenge/q_UxUHMRAc5XhHlwQjIWdTRXCKhyPl50NJJr-ENQ6U4 
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'uat.tree.com'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Certify.Shared.Core.Utils.NetworkUtils.<CheckURL>d__6.MoveNext() in D:\a\certify-internal\certify-internal\src\certify-build\certify\src\Certify.Shared\Utils\NetworkUtils.cs:line 151
+2025-06-02 02:45:50.678 -04:00 [ERR] Failed prerequisite configuration checks (SSL_ACME)
+2025-06-02 02:45:50.698 -04:00 [INF] Resuming certificate request using CA: Let's Encrypt
+2025-06-02 02:45:50.698 -04:00 [INF] Attempting challenge response validation for: uat.tree.com
+2025-06-02 02:45:50.698 -04:00 [INF] [Progress] Checking automated challenge response for: uat.tree.com
+2025-06-02 02:45:50.698 -04:00 [INF] Submitting challenge for validation: uat.tree.com http://uat.tree.com/.well-known/acme-challenge/q_UxUHMRAc5XhHlwQjIWdTRXCKhyPl50NJJr-ENQ6U4
+2025-06-02 02:45:54.994 -04:00 [ERR] [Progress] Validation failed: uat.tree.com 
+Response from Certificate Authority: DNS problem: NXDOMAIN looking up A for uat.tree.com - check that a DNS record exists for this domain; DNS problem: NXDOMAIN looking up AAAA for uat.tree.com - check that a DNS record exists for this domain [BadRequest :: urn:ietf:params:acme:error:dns]
+2025-06-02 02:45:55.007 -04:00 [ERR] Validation of the required challenges did not complete successfully. Validation failed: uat.tree.com 
+Response from Certificate Authority: DNS problem: NXDOMAIN looking up A for uat.tree.com - check that a DNS record exists for this domain; DNS problem: NXDOMAIN looking up AAAA for uat.tree.com - check that a DNS record exists for this domain [BadRequest :: urn:ietf:params:acme:error:dns]
+2025-06-02 02:57:24.331 -04:00 [ERR] [Progress] One or more tests failed
+
+
+
+
+
+
+
+
+
+Verification TXT Record
+Include this TXT record in your DNS to verify ownership of the domain.
+Type	Name	Content
+TXT	cloudflare-verify.tree.com	152313141449-95231111
