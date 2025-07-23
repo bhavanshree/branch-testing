@@ -1,0 +1,58 @@
+wget -q -O - https://workspaces-client-linux-public-key.s3-us-west-2.amazonaws.com/ADB332E7.asc | sudo tee /etc/apt/trusted.gpg.d/amazon-workspaces-clients.asc > /dev/null
+
+echo "deb [arch=amd64] https://d3nt0h4h6pmmc4.cloudfront.net/ubuntu jammy main" | sudo tee /etc/apt/sources.list.d/amazon-workspaces-clients.list
+
+sudo apt-get update
+
+sudo apt-get install workspacesclient
+
+
+Devops responsibilities....
+
+DevOps to check any kind of server related issues, storage issues, any
+server upgrades. If there are any malware attacks, you should do
+analysis to find out what has happened and figure out a solution. You
+can get more info on this from current vendor DevOps team during
+KT session.
+
+DevOps should send previous month cloud maintenance report in the
+first week of every month. (Will share the sample one during the
+DevOps KT session).
+--------------------------
+the server is an EC2 instance that was in the VPC then the workspaces are completly differernt right?
+
+But they have the 3 workspaces ,they use this only
+also i dont know which workspae they used for developing, 
+
+
+
+-----------------------------------
+the task will be assigned to me so far, setup the git version control, and dev environment.
+so far there is 2 environment , UAT and PROD
+
+Every Tuesday there is an PROD Deployment.
+
+Main things to ask to client.
+-- cloud maintenance report
+-- How was the deployment was done in so far.
+-- Backup  and restore process,
+-- If there is no git version how they revert if anything occurs
+-- what are the key responsibilities was handled by devops in this project.
+-- what are the issue they faced recently and how are they handled it,
+how do you find that issue, and how do you solve it , is the issue we faced frequently.
+-- kinldy share all of the documents for this projects so far.
+ 
+Credentials need to ask in my point of you
+
+Azure credentials
+AWS credentials
+ENV, secrets
+
+-----
+
+So far i dont understand the flow may be or ned help for the neccessary credentials need to ask from the client and vendor devops engineer.
+they said everything was handled by AWS i still dont have the clarity of the flow.
+
+
+
+They put me a lot of pressure and huge responsibility to me, this is not good.

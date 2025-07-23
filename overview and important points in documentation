@@ -1,0 +1,59 @@
+how they automatically created EC2 instance using databricks clusters
+
+https://dbc-c318f772-09ae.cloud.databricks.com/
+
+ETL/ELT pipelines
+
+Unity Catalog in Databricks
+
+Secretes are in the Databricks., secret scope Database, like env, Password, server info
+
+At 06:00 AM (UTC+00:00 — UTC)
+
+the most of the data works are handled in databricks , so i want to know is my responsiblility, 
+
+so the RDS was installed in the environment  and it was the source of the databrick
+
+em-db-prod.cbbn2olpri4t.us-east-1.rds.amazonaws.com   PROD RDS SQL SERVER    core, core-audit
+
+under the lakehouse query there is no  custom report referencing
+
+Overall Work on Databricks
+In the custom reporting engagement, optimized Lakehouse process by –
+Auto Mapping file creation
+Computed columns Table sync up and Load.
+Redundant data fix
+Optimization in SCD logic for capturing and marking active, in-active records for daily captured latest records.
+Audit data Clearance analysis.
+Work around 45-50 custom report queries, its testing and validations in both UAT and PROD with dev cluster and serverless respectively.
+--------------------------------------------------------------
+
+Documentation-2
+
+The VPC includes subnets, security groups, and route tables that manage traffic between Databricks clusters, storage, and other AWS services	
+
+Databricks RBAC
+
+need the microsoft account to access the URL///////
+
+https://dev.azure.com/jmangroupltd/Firetree%20-%20Data%20lake%20-%20DW/_git/lakehouse?version=GBdev
+
+https://dev.azure.com/jmangroupltd/Firetree%20-%20Data%20lake%20-%20DW/_git/lakehouse?version=GBmain
+
+
+
+------------------------------------
+
+Main question (seems like stupid )
+
+how they configured the setup because most of the things was handled in databricks but how the databricks was created , the infrastructure have many things, like 
+
+this was the KT plan tomorrow
+
+Server Setup & Deployment Process	2h	Jeffrin	Explain server setup and share the documentation, IIS config, environment variables, logs, backups.
+Security, Access & Monitoring Tools	1h	Jeffrin	Roles, credentials, monitoring, SSL certs
+
+
+how they give workspaces if it was hosted in the EC2 instances , how they give workspaces is this any different approach taken, if it was git related then where do i need implement it?
+
+
